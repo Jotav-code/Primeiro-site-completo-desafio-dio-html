@@ -1,0 +1,21 @@
+table{
+    margin-top: 40px;
+}
+
+thead{
+    background-color: #23282C;
+    
+    & th{
+        color: white;
+    }
+}
+th,td{
+    font-size: 2em;
+    text-align: left;
+    padding: 4px 0px;
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+}
+td:last-child{
+    border-right: solid 1px;
+}

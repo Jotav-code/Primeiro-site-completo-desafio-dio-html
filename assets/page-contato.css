@@ -1,0 +1,11 @@
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+button {
+  display: block;
+  align-self: flex-start; /* impede que ele estique */
+  padding: 0.5em;
+  cursor: pointer;
+}

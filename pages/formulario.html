@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table thead tr th {
+            background-color: black;
+            color: white;
+            
+            padding: 10px;
+        }
+        table tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+        table tr:hover{
+            background-color:darkmagenta;
+        }
+        table tfoot td{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--ONSUBMIT a gente faz uma função javascript para validar o formulário antes de enviar para o server client-->
+    <!--Sempre colocar 'name' 'value' em outro inputs-->
+    <!--Sempre que for checkbox ou range usar name igual com "[]" para representar uma lista no servidor-->
+    <!--temos dois metodos no html para formulario 'post' e 'get' o post envia sem a url, o get é mais uma forma para teste, para ver como está sendo enviado o formúlario-->
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <form onsubmit="submit()" action="">
+            <label for="">Nome</label>
+            <input type="text" name="nome">
+            <label for="">Profissão</label>
+            
+        </form>
+        <!--iframe ele pega o conteudo externo de outro site que voce inserir, exemplos de como usar. Do nosso próprio site, google maps, youtube e etc...-->
+        <iframe width="100%" height="615" src="https://www.youtube.com/embed/99wk0RRgTgA?si=xxA32tPtZbL-8bK-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <audio controls autoplay src="">
+            <source src="">
+            seu navegador nao suporta
+        </audio>
+        <video src="">
+            <source src="">
+            seu navegador nao suporta
+        </video>
+
+        <!--Criando tabelas tr -> linhas td -> colunas sumary -> nem preciso explicar né?-->
+        <table sumary="Essa é uma tebela de dados de imagem" cellspacing="0px" width="500px" >
+
+            <!--Já o caption adiciona uma descrição em cima da tabela-->
+            <caption>Tabela de dados de idades</caption>
+            <!--O sumaty é de extrema importancia para a acessibilidade-->
+            <thead>
+                <tr>
+                    <!--th é representado como cabeçalho da tabela-->
+                    <!--Em tabelas à uma boa prática que é não colocar nomes grandes, com isso, para melhorar a acessibilidade, usamos o atributo title na tag-->
+                    <th title="nome comleto" >NOME</th>
+                    <th title="ano de nascimento" >IDADE</th>
+                </tr>
+            </thead>
+            <!--tbody é uma forma de oranização da minha tabela, assim com thead-->
+            <tbody>
+                <tr>
+                    <td>joao</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>luiz</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>ivan</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>gustavo</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>vitor</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>total</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
