@@ -27,7 +27,7 @@ section nav ul {
     flex-direction: column;
     max-width: 200px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vw;
     text-align: center;
     align-items: center;
     font-size: 2em;  

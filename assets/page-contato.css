@@ -14,3 +14,25 @@ button {
   gap: 20px;
   margin-top: 20px;
 }
+section div header span{
+  margin: 0;
+  padding: 0;
+}
+
+section nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    width: 100%;
+    min-height: 100vw;
+    text-align: center;
+    align-items: center;
+    font-size: 2em;  
+    justify-content: space-around;
+    cursor: pointer;
+    background: rgb(112, 123, 153);
+    padding: 0px;
+    color: white;
+
+}
